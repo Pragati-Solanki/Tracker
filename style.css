@@ -1,19 +1,28 @@
+#circleContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    gap: 12px;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 30px;
+}
+
 .circle {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     background: #000;
-    border-color: #000000cc;
+    border: 3px solid #333;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     box-sizing: border-box;
 }
 
-.marker {
-    align-content: center;
-    font-size: 30px;
-    text-shadow: 0 0 8px currentColor, 0 0 16px currentColor;
+.circle .marker {
+    font-size: 32px;
+    line-height: 0;
 }
 
 .neon-green {
@@ -28,4 +37,9 @@
 
 body {
     background-color: #ffffff;
+}
+
+.bod {
+    width: 250px;
+    font-size: medium;
 }

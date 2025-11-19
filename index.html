@@ -3,18 +3,19 @@
 <head>
     <title> Track it Crack it</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 
 </head>
 
 <body>
-    <div class="circle">
-        <div class="marker"><span class="neon-green">✔</span></div>
-    </div>
-    <br>
-    <br>
-    <div class="circle">
-        <div class="marker"><span class="neon-red">✖</span></div>
-    </div>
+    <center>
+        <div class="bod">
+            <input type="number" id="dayInput" placeholder="Enter number of days">
+            <button id="generateBtn">Generate</button>
+        </div>
+    </center>
+    <div id="circleContainer"></div>
+
 </body>
 
 </html>
